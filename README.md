@@ -24,6 +24,7 @@ Execute:
 ```sh
 java -Dlpath=PATH_TO_LEFT_TABLE_CSV -Drpath=PATH_TO_RIGHT_TABLE_CSV -DlCol=COLUMN_NAME_USED_FOR_JOIN_IN_LEFT_TABLE -DrCol=COLUMN_NAME_USED_FOR_JOIN_IN_RIGHT_TABLE -jar LeftJoin-all-1.0.jar 
 ```
+where lpath , rpath , lCol , rCol are parameter to jar file which i am accessing through System.getProperty()
 Example:
 ```sh
 java -Dlpath=/Users/cshekhar/IdeaProjects/LeftJoin/employee_names.csv -Drpath=/Users/cshekhar/IdeaProjects/LeftJoin/employee_pay.csv -DlCol=id -DrCol=id -jar build/libs/LeftJoin-all-1.0.jar 
